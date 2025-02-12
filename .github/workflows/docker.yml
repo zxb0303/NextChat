@@ -27,7 +27,7 @@ jobs:
         with:
           images: zxb0303/chatgpt-next-web
           tags: |
-            type=raw,value=20250212
+            type=raw,value={{date 'YYYYMMDD'}}
             type=ref,event=tag
       
       - 
