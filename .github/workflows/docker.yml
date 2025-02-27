@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   release:
     types: [published]
+  schedule:
+    - cron: "0 1 * * *" # every day
 
 jobs:
   push_to_registry:
